@@ -1,0 +1,139 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Development tools and IDE-specific files
+.kiro/
+
+# AI Coding Tools and Assistants
+# Cursor IDE
+.cursor/
+.cursorrules
+
+# GitHub Copilot
+.copilot/
+
+# Codeium
+.codeium/
+
+# Tabnine
+.tabnine/
+
+# Amazon CodeWhisperer
+.aws-codewhisperer/
+
+# JetBrains AI Assistant
+.idea/ai/
+
+# Sourcegraph Cody
+.sourcegraph/
+
+# Replit AI
+.replit
+replit.nix
+
+# Aider AI
+.aider*
+
+# Continue.dev
+.continue/
+
+# Other AI tools
+.ai/
+.llm/
+.gpt/
+.claude/
+
+# AI-generated files (common patterns)
+*_ai_generated*
+*_copilot*
+*_assistant*
+*.ai.py
+*.gpt.py
+*.copilot.py
+
+# Additional Development Tools
+# Windsurf IDE
+.windsurf/
+
+# Bolt.new
+.bolt/
+
+# v0.dev
+.v0/
+
+# Claude Projects
+.claude-project/
+
+# ChatGPT Code Interpreter
+.chatgpt/
+
+# Perplexity AI
+.perplexity/
+
+# Anthropic Console
+.anthropic/
+
+# OpenAI Playground
+.openai/
+
+# Local AI model files
+*.gguf
+*.ggml
+*.bin
+/models/
+checkpoints/
+
+# AI conversation logs
+conversation_*.json
+chat_*.json
+ai_session_*.log

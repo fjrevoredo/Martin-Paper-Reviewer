@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "martin"
+version = "0.1.0"
+description = "Martin - Your friendly research paper reviewer buddy"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Martin Team"},
+]
+keywords = ["martin", "research", "papers", "review", "academic", "ai", "buddy", "friendly"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "dspy-ai>=2.4.0",
+    "requests>=2.31.0",
+    "PyPDF2>=3.0.1",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "flake8>=6.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/fjrevoredo/Martin-Paper-Reviewer"
+Repository = "https://github.com/fjrevoredo/Martin-Paper-Reviewer"
+Documentation = "https://github.com/fjrevoredo/Martin-Paper-Reviewer#readme"
+Issues = "https://github.com/fjrevoredo/Martin-Paper-Reviewer/issues"
+
+[project.scripts]
+martin = "martin.main:cli_entry_point"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["martin*"]
+
+[tool.isort]
+profile = "black"
+line_length = 88

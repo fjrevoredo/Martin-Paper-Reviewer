@@ -56,6 +56,12 @@ jobs:
       run: |
         pytest --cov=martin --cov-report=xml --cov-report=term-missing
 
+    - name: Run integration tests (if API key available)
+      if: env.OPENROUTER_API_KEY != ''
+      run: |
+        pytest -m integration -v
+      continue-on-error: true
+
     - name: Store coverage report
       if: env.IS_PRIMARY_PLATFORM == 'true' && always()
       uses: actions/upload-artifact@v4

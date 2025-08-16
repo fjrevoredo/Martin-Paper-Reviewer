@@ -82,6 +82,22 @@ Martin generates structured reviews with:
 - OpenRouter API key
 - Internet connection
 
+## Testing
+
+```bash
+# Run all unit tests (fast)
+pytest
+
+# Run integration tests (requires OPENROUTER_API_KEY)
+pytest -m integration
+
+# Run benchmark tests (slow)
+pytest -m slow
+
+# Run with coverage
+pytest --cov=martin
+```
+
 ## License
 
 MIT License - see [LICENSE](LICENSE) file.
